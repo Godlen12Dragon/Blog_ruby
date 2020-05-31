@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Blog about nothing </h1>
+  <p> <b>Directed</b> by yurii_rubel.</p>
+</div>
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="https://uk.wikipedia.org/wiki/%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_%D0%A2%D0%B0%D1%80%D0%B0%D1%81_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Good link</a>
+  <a href="#">Empty link</a>
+  <a class="right"> <label for="pwd">Пароль:</label>
+  <input type="Пароль" id="pwd" name="pwd" placeholder="Пароль">
+  <script>
+              function perev(){
+                  if(document.getElementById("pwd").value.length < 8){
+                      alert("Пароль занадто короткий. Він повинен мати не менше 8 символів.");
+                  }
+                  else  {
+                      alert("Вітаємо, ви залогінилися.");
+                  }
+              }
+          </script>
+  <class="right"></a>
+  <a class="right"> <label for="username">Логін:</label>
+  <input type="text" id="Логін" name="Логін" placeholder="Логін чи пошта" > <class="right"></a>
+
+</div>
+<div class="row">
+  <div class="side">
+    <h2>About nothing</h2>
+    <h5>Hi, I love sleep:):</h5>
+    <div class="fakeimg" style="height:200px;">Тут могла б бути ваша реклама</div>
+    <p>Some text about nothing.</p>
+    <h3>My lovely drinks</h3>
+    <div class="fakeimg" style="height:60px;">Tea</div><br>
+    <div class="fakeimg" style="height:60px;">Coffee</div><br>
+    <div class="fakeimg" style="height:60px;">Beer</div>
+  </div>
+  <div class="main">
+    <h2>About history</h2>
+    <h5>September 1, 1939</h5>
+    <div class="fakeimg" style="height:200px;">The Second World War, was a global war that lasted from 1939 to 1945. The vast majority of the world's countries—including all the great powers—eventually formed two opposing military alliances: the Allies and the Axis. A state of total war emerged, directly involving more than 100 million people from more than 30 countries. The major participants threw their entire economic, industrial, and scientific capabilities behind the war effort, blurring the distinction between civilian and military resources. World War II was the deadliest conflict in human history, marked by 70 to 85 million fatalities, most of whom were civilians in the Soviet Union and China. Tens of millions of people died during the conflict due to genocides (including the Holocaust), premeditated death from starvation, massacres, and disease. Aircraft played a major role in the conflict which included the use of terror bombing, strategic bombing and the only use of nuclear weapons in war.</div>
+    <br>
+    <h2>About sport</h2>
+    <h5>May 31, 2020</h5>
+    <div class="fakeimg" style="height:200px;">Archery is the art, sport, practice, or skill of using a bow to shoot arrows.[1] The word comes from the Latin arcus. Historically, archery has been used for hunting and combat. In modern times, it is mainly a competitive sport and recreational activity. A person who participates in archery is typically called an archer or a bowman, and a person who is fond of or an expert at archery is sometimes called a toxophilite.</div>
+    <p>Very important information</p>
+    <p>Thanks for your attention.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>The end</h2>
+</div>
+</body>
+</html>
+
+
